@@ -1,0 +1,64 @@
+print("**********************************")
+print("BEM VINDO A LANCHONETE DO DEGE :)")
+print("**********************************")
+
+print("\n=== MENU PRINCIPAL ===")
+print("1. Lanches")
+print("2. Bebidas")
+print("3. Sobremesas")
+print("4. Sair")
+
+opc = input("Digite a sua opção: ")
+match opc:
+    case "1":
+        print("\n--- LANCHES ---")
+        print("1. Cachorro-quente - R$ 15,00")
+        print("2. Hambúrguer - R$ 20,00")
+        opc1 = input("Digite a opção desejada de lanche: ")
+        match opc1:
+            case "1":
+                print("Cachorro-quente - R$ 15,00")
+                quantidade11 = int(input("Digite a quantidade que deseja: "))
+                final = quantidade11 * 15
+                print(f"Seu preço final é R$ {final:.2f}")
+            case "2":
+                print("Hambúrguer - R$ 20,00")
+                quantidade1 = int(input("Digite a quantidade que deseja: "))
+                final = quantidade1 * 20
+                print(f"Seu preço final é R$ {final:.2f}")
+    case "2":
+        print("\n--- BEBIDAS ---")
+        print("1. Refrigerante - R$ 6,00")
+        print("2. Suco natural - R$ 10,00")
+        opc2 = input("Digite a opção da bebida: ")
+        match opc2:
+            case "1":
+                print("Refrigerante - R$ 6,00")
+                quantidade21 = int(input("Digite a quantidade que deseja: "))
+                final = quantidade21 * 6
+                print(f"Seu preço final é R$ {final:.2f}")
+            case "2":
+                print("Suco natural - R$ 10,00")
+                quantidade2 = int(input("Digite a quantidade que deseja: "))
+                final = quantidade2 * 10
+                print(f"Seu preço final é R$ {final:.2f}")
+    case "3":
+        print("\n--- SOBREMESAS ---")
+        print("1. Açaí - R$ 25,00")
+        print("2. Sorvete - R$ 18,00")
+        opc3 = input("Digite a opção da sobremesa: ")
+        match opc3:
+            case "1":
+                print("Açaí - R$ 25,00")
+                quantidade31 = int(input("Digite a quantidade que deseja: "))
+                final = quantidade31 * 25
+                print(f"Seu preço final é R$ {final:.2f}")
+            case "2":
+                print("Sorvete - R$ 18,00")
+                quantidade3 = int(input("Digite a quantidade que deseja: "))
+                final = quantidade3 * 18
+                print(f"Seu preço final é R$ {final:.2f}")
+    case "4":
+        print("Saindo.....")
+    case _:
+        print("Opção inválida........")
